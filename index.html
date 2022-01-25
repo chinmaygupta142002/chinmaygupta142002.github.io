@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #navbar
+        {
+        background-color:#0092ed;
+        height: 35px;
+        width:100%;
+        left:0;
+        right:0;
+        border-bottom: 1px solid #8EE4AF;
+        color:white;
+        font-size:150%;
+        padding: 5px;
+        position:fixed;
+        top:0;
+        display:none;
+        }
+        #a2, #a3
+        {
+        text-decoration:none;
+        color:white;
+        padding:5px;
+        }
+        #links
+        {
+        float:right;
+        }
+        #intro
+        {
+         padding: 25px;
+         display:none;
+        }
+        #myimage
+        {
+        float:right;
+        }
+        #img
+        {
+        padding:1px;
+        }
+        #hobbies,  #skills, #social
+        {
+        background-color:#0092ed;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size:25px;
+        display: inline-block;
+        border: none;
+        margin:10px;
+        };
+
+        img
+        {
+        padding:5px;
+        margin:5px;
+        }
+        #myskills
+        {
+        float:center;
+        }
+        #myhobbies
+        {
+        display:none;
+        }
+        #myskills
+        {
+        display:none;
+        }
+        #socialmedia
+        {
+        display:none;
+        }
+        #a1
+        {
+        color:white;
+        padding:5px;
+        }
+         #welcome
+        {
+        float:center;
+        text-align:center;
+        margin:0;
+        }
+        #next
+        {
+        background-color:orange;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size:25px;
+        display: inline-block;
+        border: none;
+
+        };
+
+
+
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        document.querySelector("#next").onclick = function(){
+        document.querySelector("#welcome").style.display = "none";
+        document.querySelector("#navbar").style.display = "block";
+        document.querySelector("#intro").style.display = "block";
+        }
+        });
+        document.addEventListener("DOMContentLoaded", function(){
+        document.querySelector("#a2").onclick = function(){
+        document.querySelector("#myhobbies").style.display = "block";
+        document.querySelector("#myskills").style.display = "none";
+        document.querySelector("#intro").style.display = "none";
+        document.querySelector("#socialmedia").style.display = "none";
+        document.querySelector("#a2").style.textDecoration = "underline";
+        document.querySelector("#a3").style.textDecoration = "none";
+        document.querySelector("#a1").style.textDecoration = "none";
+        };
+        document.querySelector("#a3").onclick = function(){
+        document.querySelector("#myskills").style.display = "block";
+        document.querySelector("#myhobbies").style.display = "none";
+        document.querySelector("#socialmedia").style.display = "none";
+        document.querySelector("#a2").style.textDecoration = "none";
+        document.querySelector("#a3").style.textDecoration = "underline";
+        document.querySelector("#a1").style.textDecoration = "none";
+        document.querySelector("#intro").style.display = "none";
+        };
+        });
+        document.addEventListener("DOMContentLoaded", function(){
+        document.querySelector("#hobbies").onclick = function(){
+        document.querySelector("#myhobbies").style.display = "block";
+        document.querySelector("#myskills").style.display = "none";
+        document.querySelector("#socialmedia").style.display = "none";
+        document.querySelector("#a2").style.textDecoration = "underline";
+        document.querySelector("#a3").style.textDecoration = "none";
+        document.querySelector("#a1").style.textDecoration = "none";
+        document.querySelector("#intro").style.display = "none";
+        };
+        document.querySelector("#skills").onclick = function(){
+        document.querySelector("#myhobbies").style.display = "none";
+        document.querySelector("#myskills").style.display = "block";
+        document.querySelector("#socialmedia").style.display = "none";
+        document.querySelector("#a2").style.textDecoration = "none";
+        document.querySelector("#a3").style.textDecoration = "underline";
+        document.querySelector("#a1").style.textDecoration = "none";
+        document.querySelector("#intro").style.display = "none";
+        };
+        document.querySelector("#social").onclick = function(){
+        document.querySelector("#socialmedia").style.display = "block";
+        document.querySelector("#myhobbies").style.display = "none";
+        document.querySelector("#myskills").style.display = "none";
+        document.querySelector("#a2").style.textDecoration = "none";
+        document.querySelector("#a3").style.textDecoration = "none";
+        document.querySelector("#a1").style.textDecoration = "none";
+        document.querySelector("#intro").style.display = "none";
+        };
+        });
+        document.addEventListener("DOMContentLoaded", function(){
+        document.querySelector("#a1").onclick = function(){
+        document.querySelector("#myhobbies").style.display = "none";
+        document.querySelector("#myskills").style.display = "none";
+        document.querySelector("#a1").style.textDecoration = "underline";
+        document.querySelector("#a2").style.textDecoration = "none";
+        document.querySelector("#a3").style.textDecoration = "none";
+        document.querySelector("#intro").style.display = "block";
+        document.querySelector("#socialmedia").style.display = "none";
+        }
+        });
+
+
+
+    </script>
+</head>
+<body style="color:black; font-family:Cambria;">
+<div id="welcome">
+    <h1 style="font-size:400%; color:#DB4437">Welcome</h1>
+    <h2 style="display:inline; color:#0F9D58; font-size:400%">GDSC</h2>
+    <h2 style="display:inline; color:#F4B400; font-size:400%">,</h2>
+        <h2 style="display:inline; color:#4285F4; font-size:400%">NSUT</h2><br>
+    <img src="gdsc_logo.png"><br>
+    <button id="next">Check Out My Portfolio</button>
+
+</div>
+
+
+
+<div id="navbar">
+    Chinmay
+    <div id="links">
+    <a id="a1" style="text-align:right;" href="#intro">Home</a>
+    <a id="a2" style="text-align:right;" href="#myhobbies">My Hobbies</a>
+    <a id="a3" style="text-align:right;" href="#myskills">Skills</a>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="intro">
+<h1 style="font-size:400%">Chinmay, Software Enthusiast!</h1><br>
+        <p style="text-align:left; font-size:200%">Hola! I am a first year student at NSUT in the Computer Science branch.<br>My hobbies include playing guitar, coding, and travelling.<br> I am a die hard Manchester United fan
+
+            <img id="myimage" src="chinmay3.jpeg"></p><br><br><br><br><br>
+
+    <button id="hobbies">My Hobbies</button>
+    <button id="skills">Skills</button>
+    <button id="social">Social Media</button>
+
+    <br><br><br><br><br>
+</div>
+
+
+<div id="myhobbies" style="text-align:center;">
+    <h1 style="font-size:300%">My Hobbies</h1><br><br>
+    <div style="font-size:150%"><div style="float:left; margin:70px;">
+        <img src="guitar.png"><br>
+        Guitar
+    </div>
+        <div style="float:left; margin:70px">
+        <img src="football.png"><br>
+            Football
+            </div>
+        <div style="float:left; margin:70px">
+        <img src="code.png"><br>
+            Coding
+        </div>
+        <div style="float:left; margin:70px;">
+        <img src="travel.jpeg"><br>
+            Travel
+        </div>
+
+    </div>
+</div><br><br><br>
+<div  id="myskills">
+<div style="text-align:center">
+<h1 style="font-size:300%; text-align:center">Skills</h1><br><br>
+<label style="font-size:300%" for="python">Python</label><br>
+<progress id="python" value="350" max="500"> </progress><br><br><br>
+    <label style="font-size:300%" for="JavaScript">JavaScript</label><br>
+<progress id="JavaScript" value="250" max="500">  </progress><br><br><br>
+    <label style="font-size:300%" for="MongoDB">MongoDB</label><br>
+<progress id="MongoDB" value="400" max="500"> </progress><br><br><br>
+
+
+</div>
+</div>
+<div id="socialmedia">
+<h1 style="font-size:300%; text-align:center;">Social Media</h1>
+<div style="float:center; text-align:center;font-size:200%;">
+    <img src="instagram.jpeg"><br>
+    <a style="color:#351c75; text-decoration:none;" href="https://www.instagram.com/chinmay.14/">chinmay.14</a>
+</div><br><br>
+<div style="float:center; text-align:center;font-size:200%;">
+    <img src="linkedin.png"><br>
+    <a style="color:#351c75; text-decoration:none;" href="https://www.linkedin.com/in/chinmay-gupta-16702922b/">Chinmay Gupta</a>
+</div><br><br>
+<div style="float:center; text-align:center;font-size:200%;">
+    <img src="github.png"><br>
+    <a style="color:#351c75; text-decoration:none;" href="https://github.com/chinmaygupta142002">chinmaygupta142002</a>
+</div>
+</div>
+
+</body>
+</html>
